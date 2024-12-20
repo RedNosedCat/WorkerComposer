@@ -1,5 +1,5 @@
 <?php
-namespace shengxiaoweimo\helper;
+namespace RedNosedCat\Worker;
 /**
  * XssFilterHelper::dataXssFilter($data);
  * Class XssFilter

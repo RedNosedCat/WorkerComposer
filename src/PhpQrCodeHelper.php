@@ -1,5 +1,5 @@
 <?php
-namespace shengxiaoweimo\helper;
+namespace RedNosedCat\Worker;
 require_once dirname(__FILE__).'./phpqrcode/phpqrcode.php';
 
 /**

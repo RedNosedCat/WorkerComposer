@@ -1,5 +1,5 @@
 <?php
-namespace shengxiaoweimo\helper;
+namespace RedNosedCat\Worker;
 
 class ImportHelper
 {

@@ -1,6 +1,6 @@
 {
-    "name": "shengxiaoweimo/helper",
-    "description": "shengxiaoweimo helper class package",
+    "name": "RedNosedCat/Worker",
+    "description": "Red nosed cat wokrder use composer packagist",
     "type": "library",
     "license": "MIT",
     "require": {
@@ -10,14 +10,14 @@
     },
     "authors": [
         {
-            "name": "shengxiaoweimo",
-            "email": "liudd@changmeng.com"
+            "name": "RedNosedCat",
+            "email": "1612043566@qq.com"
         }
     ],
     "minimum-stability": "dev",
     "autoload": {
       "psr-4": {
-        "shengxiaoweimo\\helper\\": "src/"
+        "RedNosedCat\\Worker\\": "src/"
       }
     }
 }
