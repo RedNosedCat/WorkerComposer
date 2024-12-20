@@ -101,3 +101,42 @@ use RedNosedCat\Worker\ImportHelper;
  */ 
 ImportHelper::getData($fileName , $desc = [] , $readLine = 2 , $sheet = 0);
 ```
+
+### CommonFunc (常用函数)
+```php
+<?php
+use RedNosedCat\Worker\CommonFunc;
+
+//直接从数据库复制出来的字符串处理成数组
+CommonFunc::mysqlCopyStringToArray($str);
+
+/**
+ * 生成随机字符串
+ * @param  [int]  $len    [指定生成字符串的长度]
+ * @param  [int]  $type   [生成字符串类型 0 纯数字 1 数字+大小写字母]
+ * @param  [string] $addChars [额外添加的字符串]
+ */
+CommonFunc::randString($len=6, $type = 0, $addChars = '');
+```
+
+### PdoModel (数据库连接)
+```php
+<?php
+use RedNosedCat\Worker\PdoModel;
+
+$config = [
+    'name' => 'mysql',
+    'host' => '127.0.0.1',
+    'dbname' => 'dbname',
+    'port' => 3306,
+    'username' => 'test',
+    'password' => 'dbpassword'
+];
+
+$sql = 'select id from table_name';
+$obj = new PdoModel($config);
+$obj->getData($sql);
+
+$save_sql = "delete from table_name where id = 1";
+$obj->saveData($save_sql);
+```
