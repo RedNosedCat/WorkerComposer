@@ -29,8 +29,6 @@ class CommonFunc{
      * @param  [string] $addChars [额外添加的字符串]
      */
     static public function randString($len=6, $type = 0, $addChars = '') {
-
-        $string ='';
         switch($type) {
             case 0:
                 $chars='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' . $addChars;
@@ -63,6 +61,6 @@ class CommonFunc{
             $chars= ($type==1) ? str_repeat($chars, $len) : str_repeat($chars, 5);
         }
 
-        return $string;
+        return substr(str_shuffle($chars), 0, $len);
     }
 }
